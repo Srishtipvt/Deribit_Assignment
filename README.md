@@ -2,8 +2,16 @@
 
 DeriBot is an order management application which works through the command line interface. It uses a websocket client to connect to the [Deribit TESTNET website](https://test.deribit.com) and manage the user portfolio from there.
 
+The CLI instructions which follows are mentioned as under: 
+
 <p align="center">
-  <img src="https://i.imgur.com/CgVxwNf.png" alt="Message" width="500px">
+  <img src="https://i.imgur.com/PB8EwU3.png" alt="Message" width="700px">
+</p>
+
+The connection made can be shown as below: 
+
+<p align="center">
+  <img src="https://i.imgur.com/Jr1qyp5.png" alt="Message" width="700px">
 </p>
 
 ## Build instructions:
@@ -81,8 +89,7 @@ The application doubles up as a normal websocket client in addition to being abl
    ```
 4. To use the full functionality of the Deribit API, we need to authenticate using our user credentials. Enter the command 
    `DERIBIT <connection_id>  authorize <client_id> <client_secret> -r(optional)`
-   for authentication. You can find the values here:
-   ![](https://i.imgur.com/poRb5xD.png)
+   for authentication. 
    This returns a JSON object which contains an "Access Key" which can either be saved in the bot or can be manually input everytime. This key will be used to access the functionality of the API. <br>
    You can use a flag `-r` at the end of the command if you want the application to store your access_token automatically for the entire duration of the session. If this flag is absent, you will be prompted to enter the access_token everytime you use a `private` API method (i.e. one which requires connecting to your account).<br> 
    Note that this authentication needs to be carried out in every session of the DeriBot since the application sets the default scope of authorization to "connection-level".
