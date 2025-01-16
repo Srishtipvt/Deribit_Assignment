@@ -80,7 +80,7 @@ The application doubles up as a normal websocket client in addition to being abl
    > Messages Processed: (0)
    ```
 4. To use the full functionality of the Deribit API, we need to authenticate using our user credentials. Enter the command 
-   `DERIBIT authorize <connection_id> <client_id> <client_secret> -r(optional)`
+   `DERIBIT <connection_id>  authorize <client_id> <client_secret> -r(optional)`
    for authentication. You can find the values here:
    ![](https://i.imgur.com/poRb5xD.png)
    This returns a JSON object which contains an "Access Key" which can either be saved in the bot or can be manually input everytime. This key will be used to access the functionality of the API. <br>
