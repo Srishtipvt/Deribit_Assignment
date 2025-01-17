@@ -99,6 +99,11 @@ The application doubles up as a normal websocket client in addition to being abl
    You can use a flag `-r` at the end of the command if you want the application to store your access_token automatically for the entire duration of the session. If this flag is absent, you will be prompted to enter the access_token everytime you use a `private` API method (i.e. one which requires connecting to your account).<br> 
    Note that this authentication needs to be carried out in every session of the DeriBot since the application sets the default scope of authorization to "connection-level".
 
+### Connection Made is as: 
+<p align="center">
+  <img src="https://i.imgur.com/dyg5b73.png" alt="Message" width="700px">
+</p>
+
 ### Trading commands:
 1. `DERIBIT <id> buy <instrument> <transaction_name>` sends a buy order on the connection with id `<id>` for the instrument `<instrument>`. The program further prompts the user to enter certain information about the trade, as well as the access token for the session, to complete placing the order.
    <br>
