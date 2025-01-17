@@ -15,8 +15,13 @@ The connection made can be shown as below:
 </p>
 
 ## Build instructions:
+### Requirements : 
+- C++
+- Cmake
+- Boost Library ( for websocket )
+- OpenSSL
 
-### Prerequisites
+### Prerequisites gathering
 Ensure your system has a C++ compiler such as g++ installed.
 
 The project uses CMake, so make sure that you have CMake installed:
